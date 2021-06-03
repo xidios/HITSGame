@@ -4,21 +4,54 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public CharacterController2D controller2D;
-
+    public Rigidbody2D rb;
+    public Animator animator;
+    public Collider2D cd;
+    public LayerMask ground;
     public float runSpeed = 30f;
+    public float jumpSpeed = 10f;
 
     private float horizontalSpeed = 0f;
+    private float verticalSpeed = 0f;
+
 
     private void Update()
-    {
-
-        horizontalSpeed = Input.GetAxisRaw("Horizontal") * runSpeed;
-
+    {        
+        Move();
+        if (Input.GetKeyDown(KeyCode.Space) && cd.IsTouchingLayers(ground))
+        {
+            Jump();
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            print("Do domething");
+        }
     }
 
-    private void FixedUpdate()
+    private void Move()
     {
-        controller2D.Move(horizontalSpeed * Time.fixedDeltaTime, false, false);
+        float xVal = Input.GetAxisRaw("Horizontal");
+        horizontalSpeed = xVal * runSpeed;
+
+        rb.velocity = new Vector2(horizontalSpeed, rb.velocity.y);
+        if (xVal != 0)
+        {
+            transform.localScale = new Vector3(xVal, 1, 1);
+            animator.SetBool("IsWalking", true);
+        }        
+        else
+        {
+            animator.SetBool("IsWalking", false);
+        }
     }
+
+    private void Jump()
+    {       
+            verticalSpeed = 1 * jumpSpeed;
+            rb.velocity = new Vector2(rb.velocity.x, verticalSpeed);       
+    }
+    //private void FixedUpdate()
+    //{
+    //    controller2D.Move(horizontalSpeed * Time.fixedDeltaTime, false, false);
+    //}
 }
