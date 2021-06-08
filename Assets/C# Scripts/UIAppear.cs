@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIAppear : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI text;
     [SerializeField] Canvas canvas;
-    [SerializeField] Text text;
+    
     [SerializeField] string textField;
 
     void OnTriggerEnter2D(Collider2D other)

@@ -26,11 +26,11 @@ public class PlayerController : MonoBehaviour
         {
             print("Do domething");
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            OpenMenu openMenu = new OpenMenu();
-            openMenu.BackToMenu();
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    OpenMenu openMenu = new OpenMenu();
+        //    openMenu.BackToMenu();
+        //}
     }
 
     private void Move()
