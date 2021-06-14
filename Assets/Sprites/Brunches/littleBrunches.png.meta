@@ -1,0 +1,648 @@
+fileFormatVersion: 2
+guid: bad22e8d7b4e0c6489b7610978c90616
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8646800951166406263
+    second: littleBrunches_0
+  - first:
+      213: -5060344710145593213
+    second: littleBrunches_1
+  - first:
+      213: 2261137257186306945
+    second: littleBrunches_2
+  - first:
+      213: 3057062123172802155
+    second: littleBrunches_3
+  - first:
+      213: -7341610936518142854
+    second: littleBrunches_4
+  - first:
+      213: -6628494737751850087
+    second: littleBrunches_5
+  - first:
+      213: 2217643663730658961
+    second: littleBrunches_6
+  - first:
+      213: -1570632738081535237
+    second: littleBrunches_7
+  - first:
+      213: 1088338902374320282
+    second: littleBrunches_8
+  - first:
+      213: 6793853980073198931
+    second: littleBrunches_9
+  - first:
+      213: -6956186945705904447
+    second: littleBrunches_10
+  - first:
+      213: -7512738707154432693
+    second: littleBrunches_11
+  - first:
+      213: 2713523629607594464
+    second: littleBrunches_12
+  - first:
+      213: 6701793581192343838
+    second: littleBrunches_13
+  - first:
+      213: -2413582032548769651
+    second: littleBrunches_14
+  - first:
+      213: -3890639205579972945
+    second: littleBrunches_15
+  - first:
+      213: -6389776121159681260
+    second: littleBrunches_16
+  - first:
+      213: -5299273425170101127
+    second: littleBrunches_17
+  - first:
+      213: -6500751979393336791
+    second: littleBrunches_18
+  - first:
+      213: -4773134689231207304
+    second: littleBrunches_19
+  - first:
+      213: -8462006695307345619
+    second: littleBrunches_20
+  - first:
+      213: -6651029327191633288
+    second: littleBrunches_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: littleBrunches_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2470
+        width: 150
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e88c107ab9ff770800000000000000
+      internalID: 8646800951166406263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_1
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2424
+        width: 328
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380beb60c4b06c9b0800000000000000
+      internalID: -5060344710145593213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_2
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 2401
+        width: 131
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18badfafa5c216f10800000000000000
+      internalID: 2261137257186306945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_3
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 2354
+        width: 125
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e2404ddcddc6a20800000000000000
+      internalID: 3057062123172802155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_4
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 2437
+        width: 283
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7496b130cb5d1a90800000000000000
+      internalID: -7341610936518142854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1945
+        width: 88
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99341c0c72bd204a0800000000000000
+      internalID: -6628494737751850087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_6
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1906
+        width: 148
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ecf0f9927a6ce10800000000000000
+      internalID: 2217643663730658961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_7
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1906
+        width: 187
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa0d06a8ddf33ae0800000000000000
+      internalID: -1570632738081535237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_8
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1876
+        width: 143
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a988247277e8a1f00800000000000000
+      internalID: 1088338902374320282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_9
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 1908
+        width: 165
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3550322133e984e50800000000000000
+      internalID: 6793853980073198931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_10
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1927
+        width: 100
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c67dfd04d8a67f90800000000000000
+      internalID: -6956186945705904447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1259
+        width: 240
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d8bb533f36db790800000000000000
+      internalID: -7512738707154432693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_12
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1198
+        width: 101
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9a3604d5f58a520800000000000000
+      internalID: 2713523629607594464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_13
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1248
+        width: 215
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1176f421cd810d50800000000000000
+      internalID: 6701793581192343838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_14
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 1246
+        width: 150
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d805aa9ddeb318ed0800000000000000
+      internalID: -2413582032548769651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_15
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 1285
+        width: 277
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae923a814ca10ac0800000000000000
+      internalID: -3890639205579972945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 742
+        width: 78
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bf008e874f257a0800000000000000
+      internalID: -6389776121159681260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_17
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 687
+        width: 179
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c811585e23576b0800000000000000
+      internalID: -5299273425170101127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_18
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 684
+        width: 172
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ab7576480b8c5a0800000000000000
+      internalID: -6500751979393336791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_19
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 645
+        width: 288
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874874f0a4b62cdb0800000000000000
+      internalID: -4773134689231207304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_20
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 321
+        width: 312
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d218a378eb9e09a80800000000000000
+      internalID: -8462006695307345619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: littleBrunches_21
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 0
+        width: 658
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872990ac01cc2b3a0800000000000000
+      internalID: -6651029327191633288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
