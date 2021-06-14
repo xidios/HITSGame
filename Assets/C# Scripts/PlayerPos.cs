@@ -7,6 +7,7 @@ public class PlayerPos : MonoBehaviour
 {
     // Start is called before the first frame update
     private GameMaster gm;
+    public GameObject player;
     void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -14,12 +15,17 @@ public class PlayerPos : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    //void Update()
+    //{
+
+    //    if (player.transform.position.y <= -10)
+    //    {
+    //        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //    }
+    //}
+    public void Respawn()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 }
