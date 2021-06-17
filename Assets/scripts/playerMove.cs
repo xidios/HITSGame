@@ -43,42 +43,16 @@ public class playerMove : MonoBehaviour
             this.transform.localScale = new Vector3(-0.4f, 0.4f, 0.4f);
         }
     }
+    public float jumpForce = 210f;
 
-  /*  public float jumpForce = 210f;
-    private bool jumpControl;
-    private int jumpIteration = 0;
-    public int jumpValueIteration = 60;
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) && onGround)
         {
-            if (onGround)
-            {
-                jumpControl = true;
-            }
-            
-        }
-        else
-        {
-            jumpControl = false;
-        }
-        if (jumpControl)
-        {
-            if (jumpIteration++ < jumpValueIteration)
-            {
-                rb.AddForce(Vector2.up * jumpForce / jumpIteration);
-            }
-        }
-        else
-        {
-            jumpIteration = 0;
-        }
-        /*if (Input.GetKeyDown(KeyCode.UpArrow)&&onGround) {
-            //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             rb.AddForce(Vector2.up * jumpForce);
         }
-    }
 
+    }
     public bool onGround;
     public Transform GroundCheck;
     public float checkRadius = 0.5f;
@@ -86,6 +60,51 @@ public class playerMove : MonoBehaviour
     void CheckingGround()
     {
         onGround = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, Ground);
-        anim.SetBool("onGround", onGround);
-    }*/
+        //anim.SetBool("onGround", onGround);
+    }
+
+    /*  public float jumpForce = 210f;
+      private bool jumpControl;
+      private int jumpIteration = 0;
+      public int jumpValueIteration = 60;
+      void Jump()
+      {
+          if (Input.GetKeyDown(KeyCode.UpArrow))
+          {
+              if (onGround)
+              {
+                  jumpControl = true;
+              }
+
+          }
+          else
+          {
+              jumpControl = false;
+          }
+          if (jumpControl)
+          {
+              if (jumpIteration++ < jumpValueIteration)
+              {
+                  rb.AddForce(Vector2.up * jumpForce / jumpIteration);
+              }
+          }
+          else
+          {
+              jumpIteration = 0;
+          }
+          /*if (Input.GetKeyDown(KeyCode.UpArrow)&&onGround) {
+              //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+              rb.AddForce(Vector2.up * jumpForce);
+          }
+      }
+
+      public bool onGround;
+      public Transform GroundCheck;
+      public float checkRadius = 0.5f;
+      public LayerMask Ground;
+      void CheckingGround()
+      {
+          onGround = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, Ground);
+          anim.SetBool("onGround", onGround);
+      }*/
 }
