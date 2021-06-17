@@ -3,16 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - GM
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - Ground
+  - 
   - 
   - 
   - 
@@ -42,15 +41,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Backfround
+  - name: FarBackfround
     uniqueID: 1628285589
     locked: 0
-  - name: Objects
-    uniqueID: 1927283977
-    locked: 0
-  - name: Entity
+  - name: MediumBackfround
     uniqueID: 981211711
     locked: 0
-  - name: Foreground
+  - name: NearBackfround
     uniqueID: 4072575189
+    locked: 0
+  - name: Trees
+    uniqueID: 3086298765
+    locked: 0
+  - name: Fog
+    uniqueID: 1359437721
+    locked: 0
+  - name: Player
+    uniqueID: 1428989141
+    locked: 0
+  - name: Grass
+    uniqueID: 4025483351
+    locked: 0
+  - name: Ground
+    uniqueID: 1177005439
     locked: 0
