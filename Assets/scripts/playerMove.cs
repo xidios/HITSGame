@@ -7,28 +7,28 @@ public class playerMove : MonoBehaviour
     public Rigidbody2D rb;
     public Vector2 moveVector;
     public float speed = 2f;
-    public Animator anim;
-    public SpriteRenderer sr;
+    //public Animator anim;
+    //public SpriteRenderer sr;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>();
+        //anim = GetComponent<Animator>();
+        //sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         walk();
         Flip();
-        Jump();
-        CheckingGround();
+        //Jump();
+        //CheckingGround();
     }
 
     void walk()
     {
         moveVector.x = Input.GetAxis("Horizontal");
-        anim.SetFloat("moveX", Mathf.Abs(moveVector.x));
+        //anim.SetFloat("moveX", Mathf.Abs(moveVector.x));
         rb.velocity = new Vector2(moveVector.x * speed, rb.velocity.y);
         //rb.AddForce(moveVector * speed);
     }
@@ -44,7 +44,7 @@ public class playerMove : MonoBehaviour
         }
     }
 
-    public float jumpForce = 210f;
+  /*  public float jumpForce = 210f;
     private bool jumpControl;
     private int jumpIteration = 0;
     public int jumpValueIteration = 60;
@@ -76,7 +76,7 @@ public class playerMove : MonoBehaviour
         /*if (Input.GetKeyDown(KeyCode.UpArrow)&&onGround) {
             //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             rb.AddForce(Vector2.up * jumpForce);
-        }*/
+        }
     }
 
     public bool onGround;
@@ -87,5 +87,5 @@ public class playerMove : MonoBehaviour
     {
         onGround = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, Ground);
         anim.SetBool("onGround", onGround);
-    }
+    }*/
 }
