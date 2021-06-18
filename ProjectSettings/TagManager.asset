@@ -8,6 +8,7 @@ TagManager:
   - Stone
   - StoneTrap1
   - Timer
+  - Alert
   layers:
   - Default
   - TransparentFX
