@@ -10,7 +10,9 @@ public class GameMaster : MonoBehaviour
     public  GameObject gameCanvas;
     public Vector2 lastCheckPointPos;
     public float time = 0;
-    public Text text;
+    public int memories = 0;
+    public Text textTime;
+    public Text textMemories;
     private void Awake()
     {
         if (instance == null)
@@ -33,7 +35,7 @@ public class GameMaster : MonoBehaviour
     {
         time += Time.deltaTime;
         System.TimeSpan timer = System.TimeSpan.FromSeconds(time);
-        
-        text.text = timer.ToString("mm':'ss");
+        textTime.text = timer.ToString("mm':'ss");
+        textMemories.text = $"{memories} / 5";
     }
 }

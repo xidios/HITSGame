@@ -11,16 +11,19 @@ public class UIAppear : MonoBehaviour
     [SerializeField] string textField;
     [SerializeField] SpriteRenderer sp;
     private bool flag = true;
+    private GameMaster gm;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && flag)
         {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
             print("Working");
             canvas.enabled = true;
             text.text = textField;
             text.color = Color.white;
             sp.enabled = false;
             flag = false;
+            gm.memories++;
         }
     }
     void OnTriggerExit2D(Collider2D other)
