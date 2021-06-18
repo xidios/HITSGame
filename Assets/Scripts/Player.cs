@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow)&&onGround)
+        if ((Input.GetKeyDown(KeyCode.UpArrow)|| Input.GetKeyDown(KeyCode.Space))&&onGround)
         {
             rb.AddForce(Vector2.up * jumpForce);
         }
