@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GM
   - Stone
+  - StoneTrap1
+  - Timer
   layers:
   - Default
   - TransparentFX
