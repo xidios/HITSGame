@@ -13,6 +13,9 @@ public class GameMaster : MonoBehaviour
     public int memories = 0;
     public Text textTime;
     public Text textMemories;
+
+    public GameObject[] alertPoints;
+    public GameObject alertWindow;
     private void Awake()
     {
         if (instance == null)
@@ -21,11 +24,20 @@ public class GameMaster : MonoBehaviour
             
             DontDestroyOnLoad(instance);
             DontDestroyOnLoad(gameCanvas);
+            DontDestroyOnLoad(alertWindow);
+            foreach (var al in alertPoints)
+            {
+                DontDestroyOnLoad(al);
+            }
         }
         else
         {
             Destroy(gameObject);
             Destroy(gameCanvas);
+            foreach (var al in alertPoints)
+            {
+                Destroy(al);
+            }
         }
 
                 
