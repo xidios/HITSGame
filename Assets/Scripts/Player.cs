@@ -21,6 +21,9 @@ public class Player : MonoBehaviour
         Flip();
         Jump();
         CheckingGround();
+        CheckingLiane();
+        LianesMechanics();
+        LianeUpDown();
     }
 
     void walk()
@@ -60,5 +63,38 @@ public class Player : MonoBehaviour
     {
         onGround = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, Ground);
         anim.SetBool("onGround", onGround);
+    }
+
+
+    public float CheckRadiusLiane = 0.04f;
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawSphere(CheckLiane.position, CheckRadiusLiane);
+    }
+    public Transform CheckLiane;
+    public bool checkedLiane;
+    public LayerMask LianeMask;
+    void CheckingLiane() {
+        checkedLiane = Physics2D.OverlapPoint(CheckLiane.position, LianeMask);
+    }
+
+    public float LianeSpeed = 1.5f;
+    void LianesMechanics()
+    {
+        if (checkedLiane)
+        {
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            rb.velocity = new Vector2(rb.velocity.x, moveVector.y);
+        }
+        else
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+        }
+    }
+
+    void LianeUpDown()
+    {
+        moveVector.y = Input.GetAxisRaw("Vertical");
     }
 }
