@@ -64,6 +64,9 @@ TagManager:
   - name: Player
     uniqueID: 1428989141
     locked: 0
+  - name: Water
+    uniqueID: 615567815
+    locked: 0
   - name: Grass
     uniqueID: 4025483351
     locked: 0
