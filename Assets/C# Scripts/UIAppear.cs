@@ -24,6 +24,7 @@ public class UIAppear : MonoBehaviour
             sp.enabled = false;
             flag = false;
             gm.memories++;
+            gm.flagAlert = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -31,6 +32,7 @@ public class UIAppear : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             canvas.enabled = false;
+            gm.flagAlert = false;
         }
     }
 }

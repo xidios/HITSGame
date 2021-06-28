@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
 
     private bool isPaused = false;
     public GameObject pauseMenuUI;
+    public GameMaster gm;
     // Update is called once per frame
     void Update()
     {
@@ -38,7 +39,14 @@ public class PauseMenu : MonoBehaviour
     }
     public void BackToMenu()
     {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        gm.RestartGame();
         Resume();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);        
+    }
+    public void QuitGame()
+    {
+        print("See you space cowboy");
+        Application.Quit();
     }
 }
