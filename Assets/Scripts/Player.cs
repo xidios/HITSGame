@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public Vector2 moveVector;
     public float speed = 2f;
     public Animator anim;
+    public AudioSource footsteps;
+    public AudioSource jumpLand;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -96,5 +98,14 @@ public class Player : MonoBehaviour
     void LianeUpDown()
     {
         moveVector.y = Input.GetAxisRaw("Vertical");
+    }
+    public void FootStepPlay()
+    {
+        footsteps.Play();
+    }
+
+    public void JumpLandSound()
+    {
+        jumpLand.Play();
     }
 }
