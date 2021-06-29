@@ -49,7 +49,7 @@ public class GameMaster : MonoBehaviour
 
     void Update()
     {
-        if (timerEnable)
+        if (timerEnable && !flagAlert)
         {
             time += Time.deltaTime;
             System.TimeSpan timer = System.TimeSpan.FromSeconds(time);
