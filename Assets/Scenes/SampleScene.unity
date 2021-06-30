@@ -18304,6 +18304,11 @@ PolygonCollider2D:
       - {x: -0.47, y: -7.6299996}
       - {x: 0.72999996, y: -7.6299996}
       - {x: 0.72999996, y: 7.6299996}
+--- !u!1 &419528907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2079781991790373163, guid: f2970625087bd2f4b8a07da79163f213, type: 3}
+  m_PrefabInstance: {fileID: 1581436321}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &422233636
 GameObject:
   m_ObjectHideFlags: 0
@@ -58704,6 +58709,11 @@ Transform:
   m_Father: {fileID: 1084436867}
   m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.547}
+--- !u!1 &1167111546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2079781991790373163, guid: f2970625087bd2f4b8a07da79163f213, type: 3}
+  m_PrefabInstance: {fileID: 795113053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1167188600
 GameObject:
   m_ObjectHideFlags: 0
@@ -67602,6 +67612,11 @@ Transform:
   m_Father: {fileID: 1842735905}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1441382640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2079781991790373163, guid: f2970625087bd2f4b8a07da79163f213, type: 3}
+  m_PrefabInstance: {fileID: 1780273605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1442091072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77319,20 +77334,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8241992931936366667, guid: abcb7f7f63f06274d8ffb77882cb097f, type: 3}
       propertyPath: alertPoints.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8241992931936366667, guid: abcb7f7f63f06274d8ffb77882cb097f, type: 3}
       propertyPath: alertPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 7679626}
+      objectReference: {fileID: 419528907}
     - target: {fileID: 8241992931936366667, guid: abcb7f7f63f06274d8ffb77882cb097f, type: 3}
       propertyPath: alertPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1441382640}
     - target: {fileID: 8241992931936366667, guid: abcb7f7f63f06274d8ffb77882cb097f, type: 3}
       propertyPath: alertPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1167111546}
     - target: {fileID: 8241992931936366667, guid: abcb7f7f63f06274d8ffb77882cb097f, type: 3}
       propertyPath: alertPoints.Array.data[3]
       value: 
@@ -94999,7 +95014,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062734438}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
