@@ -14,7 +14,7 @@ public class GameMaster : MonoBehaviour
     public Text textTime;
     public Text textMemories;
     public bool flagAlert = false;
-    public GameObject[] alertPoints;
+    public GameObject alertPoints;
     public GameObject alertWindow;
     public Canvas alertEndFast;
     public Canvas alertEndSlow;
@@ -29,19 +29,17 @@ public class GameMaster : MonoBehaviour
             DontDestroyOnLoad(instance);
             DontDestroyOnLoad(gameCanvas);
             DontDestroyOnLoad(alertWindow);
-            foreach (var al in alertPoints)
-            {
-                DontDestroyOnLoad(al);
-            }
+
+            DontDestroyOnLoad(alertPoints);
+
         }
         else
         {
             Destroy(gameObject);
             Destroy(gameCanvas);
-            foreach (var al in alertPoints)
-            {
-                Destroy(al);
-            }
+
+            Destroy(alertPoints);
+
         }
 
 
@@ -85,7 +83,7 @@ public class GameMaster : MonoBehaviour
     }
     public void SetNull()
     {
-        
+
     }
     public void EndFast()
     {
