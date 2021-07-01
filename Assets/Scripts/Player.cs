@@ -9,21 +9,29 @@ public class Player : MonoBehaviour
     public float speed = 2f;
     public Animator anim;
     public AudioSource footsteps;
+    //public AudioSource PerelomKostey;
+    public GameMaster gm;
+    public float timeInJump = 0f;
     public AudioSource jumpLand;
+    public PlayerPos playerPos;
+    public float ySpeed = 0;
+    public float speedUnderDead = -15f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        ySpeed = rb.velocity.y;
         walk();
         Flip();
         Jump();
         CheckingGround();
-        CheckingLiane();
+        CheckingLiane();           
         LianesMechanics();
         LianeUpDown();
     }
@@ -51,7 +59,7 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
-        if ((Input.GetKeyDown(KeyCode.UpArrow)|| Input.GetKeyDown(KeyCode.Space))&&onGround)
+        if ((Input.GetKeyDown(KeyCode.UpArrow)|| Input.GetKeyDown(KeyCode.Space))&& onGround)
         {
             rb.AddForce(Vector2.up * jumpForce);
         }
@@ -65,6 +73,9 @@ public class Player : MonoBehaviour
     {
         onGround = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, Ground);
         anim.SetBool("onGround", onGround);
+        DeathByHeight();
+
+
     }
 
 
@@ -101,6 +112,16 @@ public class Player : MonoBehaviour
         moveVector.y = Input.GetAxisRaw("Vertical");
         anim.SetFloat("moveY", moveVector.y);
     }
+    void DeathByHeight()
+    {
+        if (ySpeed < speedUnderDead && onGround)
+        {
+            gm.PerelomKosteySound();
+            playerPos.Respawn();
+            
+        }
+    }
+
 
     public void FootStepPlay()
     {

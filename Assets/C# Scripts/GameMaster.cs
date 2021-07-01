@@ -20,6 +20,7 @@ public class GameMaster : MonoBehaviour
     public Canvas alertEndSlow;
     public Canvas alertBetween;
     public bool timerEnable = true;
+    public AudioSource PerelomKostey;
     private void Awake()
     {
         if (instance == null)
@@ -99,5 +100,9 @@ public class GameMaster : MonoBehaviour
         memories = 0;
         timerEnable = true;
         Destroy(instance);
+    }
+    public void PerelomKosteySound()
+    {
+        PerelomKostey.Play();
     }
 }
