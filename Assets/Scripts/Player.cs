@@ -79,6 +79,7 @@ public class Player : MonoBehaviour
     public LayerMask LianeMask;
     void CheckingLiane() {
         checkedLiane = Physics2D.OverlapPoint(CheckLiane.position, LianeMask);
+        anim.SetBool("onLiane", checkedLiane);
     }
 
     public float LianeSpeed = 1.5f;
@@ -98,7 +99,9 @@ public class Player : MonoBehaviour
     void LianeUpDown()
     {
         moveVector.y = Input.GetAxisRaw("Vertical");
+        anim.SetFloat("moveY", moveVector.y);
     }
+
     public void FootStepPlay()
     {
         footsteps.Play();
