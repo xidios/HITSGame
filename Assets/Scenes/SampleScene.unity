@@ -1930,7 +1930,7 @@ GameObject:
   - component: {fileID: 43015623}
   - component: {fileID: 43015624}
   m_Layer: 0
-  m_Name: pngwing.com
+  m_Name: hand4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19290,7 +19290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -86468.13, y: 79295.94}
+  m_AnchoredPosition: {x: -134507.02, y: 122997.1}
   m_SizeDelta: {x: 0, y: 827.1146}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &436152947
@@ -31071,7 +31071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -142969.77, y: 130239.625}
+  m_AnchoredPosition: {x: -191011.97, y: 173940.92}
   m_SizeDelta: {x: 0, y: 371.6364}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &605324693
@@ -62057,7 +62057,7 @@ GameObject:
   - component: {fileID: 1207715802}
   - component: {fileID: 1207715803}
   m_Layer: 0
-  m_Name: pngegg
+  m_Name: hand1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92048,7 +92048,7 @@ GameObject:
   - component: {fileID: 1856933431}
   - component: {fileID: 1856933432}
   m_Layer: 0
-  m_Name: pngwing.com
+  m_Name: hand2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92294,7 +92294,7 @@ GameObject:
   - component: {fileID: 1865592021}
   - component: {fileID: 1865592022}
   m_Layer: 0
-  m_Name: pngegg
+  m_Name: hand3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92308,7 +92308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865592020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.1, y: -6.8, z: 3208.577}
+  m_LocalPosition: {x: -10.65, y: -6.58, z: 3208.577}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2121564693}
@@ -101343,7 +101343,7 @@ Animator:
   m_GameObject: {fileID: 2121564691}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ad0a1227e2598c74d9ba7e2edc18c60d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 51b2da86d76b54afaa1f991020ee13e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
