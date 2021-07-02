@@ -15,7 +15,6 @@ public class GameMaster : MonoBehaviour
     public Text textMemories;
     public bool flagAlert = false;
     public GameObject alertPoints;
-    public GameObject alertWindow;
     public Canvas alertEndFast;
     public Canvas alertEndSlow;
     public Canvas alertBetween;
@@ -29,7 +28,6 @@ public class GameMaster : MonoBehaviour
 
             DontDestroyOnLoad(instance);
             DontDestroyOnLoad(gameCanvas);
-            DontDestroyOnLoad(alertWindow);
 
             DontDestroyOnLoad(alertPoints);
 

@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
     public float speed = 2f;
     public Animator anim;
     public AudioSource footsteps;
-    //public AudioSource PerelomKostey;
     public GameMaster gm;
     public float timeInJump = 0f;
     public AudioSource jumpLand;
