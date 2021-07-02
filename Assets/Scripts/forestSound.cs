@@ -5,14 +5,22 @@ using UnityEngine;
 public class forestSound : MonoBehaviour
 {
     public GameObject audioTrigger;
-    public AudioClip music;
-    private AudioSource musicAudio;
-    
-    private void OnTriggerStay(Collider other)
+    public AudioSource musicAudio;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")|| other.CompareTag("Main Camera"))
+        if (other.CompareTag("Player") || other.CompareTag("MainCamera"))
         {
-            musicAudio.PlayOneShot(music);
+            print("Sound");
+            musicAudio.Play();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") || other.CompareTag("MainCamera"))
+        {
+            print("Sound");
+            musicAudio.Stop();
         }
     }
 

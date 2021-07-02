@@ -59662,7 +59662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioTrigger: {fileID: 1197886810}
-  music: {fileID: 8300000, guid: a709536afa2894c019f7ba3c3e339547, type: 3}
+  musicAudio: {fileID: 1197886811}
 --- !u!4 &1197886813
 Transform:
   m_ObjectHideFlags: 0
