@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
         CheckingLiane();           
         LianesMechanics();
         LianeUpDown();
+        Respawn();
     }
 
     void walk()
@@ -131,5 +132,12 @@ public class Player : MonoBehaviour
     public void JumpLandSound()
     {
         jumpLand.Play();
+    }
+    public void Respawn()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            playerPos.Respawn();
+        }
     }
 }
