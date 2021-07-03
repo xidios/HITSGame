@@ -8,20 +8,21 @@ public class UIAppear : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textMeshPro;
     [SerializeField] Canvas canvas;
-    [SerializeField] SpriteRenderer sp;
     private bool flag = true;
     private GameMaster gm;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && flag)
+        if (other.CompareTag("Player"))
         {
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+            if (flag)
+            {
+                gm.memories++;
+            }
             print("Working");
             canvas.enabled = true;
             textMeshPro.color = Color.white;
-            sp.enabled = false;
-            flag = false;
-            gm.memories++;
+            flag = false;           
             gm.flagAlert = true;
         }
     }

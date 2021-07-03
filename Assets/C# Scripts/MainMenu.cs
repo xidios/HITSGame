@@ -9,9 +9,9 @@ public class MainMenu : MonoBehaviour
     public GameMaster gm;
     public void PlayGame()
     {
-        gm= GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        gm.SetNull();
-        gm.timerEnable = true;
+        //gm= GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        //gm.SetNull();
+        //gm.timerEnable = true;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
